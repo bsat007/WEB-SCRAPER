@@ -41,7 +41,7 @@ header = []
 address = []
 phone_number = []
 
-for i in range(2, 32):
+for i in range(30):
     item = g_data[i]
     header.append(convert_to_str(list((item.contents[0].find_all('a')[0].text).encode('utf-8'))))
     address.append(convert_to_str(list((item.contents[1].find_all('p', {"class": "adr"})[0].text).encode('utf-8'))))
